@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic', sans-serif;
+}
+body{
+    background: url(http://st.automobilemag.com/uploads/sites/11/2017/07/BMW-Pebble-Beach-Convertible-Concept.png?interpolation=lanczos-none&fit=around|660:440) no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 400px;
+    padding: 40px;
+    background: rgba(80, 80, 80, 0.3);
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid goldenrod;
+}
+.container h2{
+    margin-bottom: 30px;
+    color: goldenrod;
+    text-align: center;
+}
+.container .inputBox{
+    position: relative;
+}
+.container .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    transition: .3s;
+}
+.container .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: goldenrod;
+    transition: .5s;
+    pointer-events: none;
+}
+.container .inputBox input:focus ~ label,
+.container .inputBox input:valid ~ label{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: goldenrod;
+    font-size: 12px;
+}
+.container .inputBox input:focus{    
+    border-bottom: 1px solid goldenrod;
+}
+.container input[type="submit"]{
+    background: goldenrod;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15px;
+    transition: .2s;
+}
+.container input[type="submit"]:hover{
+    background: #e7b946;
+}
+.container input[type="checkbox"] + label{
+    color: goldenrod;
+    margin-left: 5px;
+}
+.asterisk{
+    color: red;
+}
+.txt{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: auto;
+    word-wrap: break-word;
+    width: 44%;
+}
+.txt h1{
+    font-size: 84px;
+    color: goldenrod;
+    line-height: 80px;
+}
+.txt p{
+    color: wheat;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.socials{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    padding-bottom: 20px;
+}
+.socials i{
+    font-size: 20px;
+    color: goldenrod;
+    transition: .25s;
+}
+.socials i:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+@media only screen and (max-width: 835px){
+    body{
+        min-width: 360px;
+    }
+    .container {
+        width: 90%;
+        float: left;
+        display: block;
+        height: 400px;
+        width: 300px;
+        position: absolute;
+        bottom: auto;
+        left: 50%;
+        right: auto;
+        top: 180px;
+        transform: translateX(-50%);
+        padding: 40px;
+    }
+    .txt{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 150px;
+        text-align: center;
+        width: 90%;
+        min-width: 360px;
+    }
+    .txt h1{
+        font-size: 48px;
+    }
+    .txt p{
+        font-size: 16px;
+        margin: 0;
+    }
+    .container input[type="submit"]{
+        margin-bottom: 5px;
+    }
+    .socials{
+        padding: 5px;
+    }
+}
+
+
+
+
